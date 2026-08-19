@@ -25,7 +25,13 @@ commit, build number, and artifact digest the release was built from.
 
 ## Source
 
-WA Archive's source lives in a private repository; this repository holds only
-signed artifacts and the update feed. Release tags follow
-`v<marketing>-<build>`. The corresponding-source terms for the GPL components
-ship with the first published release, on counsel's recorded terms.
+Every release carries `WAArchive-source.tar.gz`, the corresponding source for
+the GPL-licensed device transport: the Python acquisition helper, the pinned
+source distribution of every package it depends on, and the scripts that build
+and install that runtime. `NOTICE-device-transport.md` inside the app names
+that archive by release tag and SHA-256, so you can check that the source
+beside a download is the source that built it.
+
+WA Archive's own source lives in a private repository. This repository holds
+the update feed and the signed release assets, nothing else. Release tags
+follow `v<marketing>-<build>`.
