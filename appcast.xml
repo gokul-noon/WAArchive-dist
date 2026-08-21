@@ -2,5 +2,47 @@
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
   <channel>
     <title>WAArchive</title>
+    <item>
+      <title>0.1.0</title>
+      <pubDate>Fri, 21 Aug 2026 05:13:41 +0000</pubDate>
+      <link>https://github.com/gokul-noon/WAArchive-dist/releases/latest</link>
+      <sparkle:version>1</sparkle:version>
+      <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description sparkle:format="markdown"><![CDATA[
+
+First release.
+
+### Added
+
+- **Your WhatsApp history, kept on your own Mac.** WA Archive pairs with an
+  iPhone over USB, pulls a WhatsApp backup, and turns it into a searchable
+  archive on an encrypted volume you control. Nothing leaves the machine, and
+  the app makes no network request outside checking for its own updates.
+- **Search that works on real messages.** Full-text search covers Latin and
+  non-Latin scripts, emoji, and mixed queries, with sort, keyset paging, and
+  jumps to any date in the middle of a conversation.
+- **Media alongside the transcript.** Photos, video thumbnails, voice notes
+  converted for playback, and waveform display, with every attachment inline
+  where it was sent.
+- **Storage you can measure and reclaim.** Retention tooling breaks usage into
+  five categories and deletes what you choose in one confirmation, leaving
+  source backups alone.
+- **The archive is readable by your own tools.** A local API and an MCP server
+  serve chats, transcripts, search, stats, and media over stdio, and `export`
+  writes the whole archive to NDJSON with a manifest.
+- **The app updates itself.** Sparkle checks a signed feed, verifies each
+  update with an Ed25519 signature before installing, and shows these notes.
+
+### Security
+
+- Every release is signed with a Developer ID certificate, notarized by Apple,
+  and stapled, so macOS opens it without a warning. Each download publishes a
+  SHA-256 checksum and a provenance record naming the exact commit it was
+  built from.
+]]></description>
+      <enclosure url="https://github.com/gokul-noon/WAArchive-dist/releases/download/v0.1.0-1/WAArchive.dmg" length="105591539" type="application/octet-stream" sparkle:edSignature="IV+wy2UVf63g09sag4ofnnE/C/cEqio0XEGbbbVxwAC5Pq4dkqEAa40ZRIv52BPCx1PS/CaV3hEe5jYbLCr/Dw=="/>
+    </item>
   </channel>
 </rss>
