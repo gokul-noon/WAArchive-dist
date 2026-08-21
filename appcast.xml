@@ -11,13 +11,32 @@
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
       <description sparkle:format="markdown"><![CDATA[
+WA Archive keeps your WhatsApp history on your own Mac. It pairs with an iPhone
+over USB, pulls a backup, and turns it into a searchable archive on an encrypted
+volume you control. Nothing leaves the machine except the check for its own
+updates.
 
-The app itself is unchanged. This release exists to prove the update path.
+### Installing
 
-If you are reading this inside WA Archive, it worked. Version 0.1.0 checked the
+Download `WAArchive.dmg` below, open it, and drag WA Archive into your
+Applications folder. Run it from Applications rather than from the disk image.
+macOS keeps a downloaded app read-only until you move it, and an update cannot
+install over a read-only copy.
+
+macOS asks you to confirm the first time you open it. Click Open. It says Apple
+checked the app and found no malicious software, and you see that once.
+
+The first release lists everything the app does:
+https://github.com/gokul-noon/WAArchive-dist/releases/tag/v0.1.0-1
+
+### What changed
+
+Nothing in the app. This version exists to prove the update path.
+
+If you are reading this inside WA Archive, it worked. Your copy checked the
 signed feed, found this version, verified its Ed25519 signature against the key
-compiled into your copy, and replaced itself. Every future version arrives the
-same way, so this is the last time anyone sends you a download link.
+compiled into it, and replaced itself. Every version after this one arrives the
+same way, so nobody needs to send you a download link again.
 ]]></description>
       <enclosure url="https://github.com/gokul-noon/WAArchive-dist/releases/download/v0.1.1-2/WAArchive.dmg" length="107609701" type="application/octet-stream" sparkle:edSignature="JHaKY5AFsUbUjYhTVNIhjnCRkYnSgXHl/KU25N7VeQ+91yg1KhJr7RD/+FfDpGAiW7LuS8nJDahRDoDs1wkfDg=="/>
     </item>
