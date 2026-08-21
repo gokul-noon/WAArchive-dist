@@ -14,7 +14,12 @@ Apple Silicon, macOS 14 or later.
    shasum -a 256 -c WAArchive.dmg.sha256
    ```
 
-3. Open the DMG and drag WA Archive into Applications.
+3. Open the DMG and drag WA Archive into Applications. Run it from there, not
+   from the disk image. macOS keeps a downloaded app read-only until you move
+   it, and an update cannot install over a read-only copy.
+4. macOS asks you to confirm the first time you open it. Click Open. It says
+   Apple checked the app and found no malicious software, and you see that
+   once.
 
 The app updates itself afterwards through Sparkle, fed by
 [`appcast.xml`](appcast.xml) in this repository. Every update is signed with
