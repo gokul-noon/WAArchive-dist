@@ -3,6 +3,25 @@
   <channel>
     <title>WAArchive</title>
     <item>
+      <title>0.1.1</title>
+      <pubDate>Fri, 21 Aug 2026 06:25:54 +0000</pubDate>
+      <link>https://github.com/gokul-noon/WAArchive-dist/releases/latest</link>
+      <sparkle:version>2</sparkle:version>
+      <sparkle:shortVersionString>0.1.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description sparkle:format="markdown"><![CDATA[
+
+The app itself is unchanged. This release exists to prove the update path.
+
+If you are reading this inside WA Archive, it worked. Version 0.1.0 checked the
+signed feed, found this version, verified its Ed25519 signature against the key
+compiled into your copy, and replaced itself. Every future version arrives the
+same way, so this is the last time anyone sends you a download link.
+]]></description>
+      <enclosure url="https://github.com/gokul-noon/WAArchive-dist/releases/download/v0.1.1-2/WAArchive.dmg" length="107609701" type="application/octet-stream" sparkle:edSignature="JHaKY5AFsUbUjYhTVNIhjnCRkYnSgXHl/KU25N7VeQ+91yg1KhJr7RD/+FfDpGAiW7LuS8nJDahRDoDs1wkfDg=="/>
+    </item>
+    <item>
       <title>0.1.0</title>
       <pubDate>Fri, 21 Aug 2026 05:13:41 +0000</pubDate>
       <link>https://github.com/gokul-noon/WAArchive-dist/releases/latest</link>
