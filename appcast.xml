@@ -3,6 +3,48 @@
   <channel>
     <title>WAArchive</title>
     <item>
+      <title>0.1.2</title>
+      <pubDate>Sat, 22 Aug 2026 09:21:04 +0000</pubDate>
+      <link>https://github.com/gokul-noon/WAArchive-dist/releases/latest</link>
+      <sparkle:version>3</sparkle:version>
+      <sparkle:shortVersionString>0.1.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description sparkle:format="markdown"><![CDATA[
+
+WA Archive keeps your WhatsApp history on your own Mac. It pairs with an iPhone
+over USB, pulls a backup, and turns it into a searchable archive on an encrypted
+volume you control. Nothing leaves the machine except the check for its own
+updates.
+
+### Added
+
+- **A model running on this Mac can read the archive, once you allow it.**
+  Settings has a Local AI access pane with a single switch, off until you turn
+  it on. It names the archive it would expose and how much of a message a model
+  may see, and it refuses every client while the app is locked. Nothing reaches
+  the network; the model has to already be on this machine.
+- **Later acquisitions can copy only what changed.** Keep a retained backup at
+  the end of a run and the next one refreshes it instead of pulling the phone
+  in full. The wizard offers the choice, and it checks there is room for both
+  copies before it starts. A first acquisition is unaffected and still copies
+  the phone in full.
+
+### Fixed
+
+- **The app no longer carries the name of the Mac it was built on.** Every
+  release before this one shipped the build machine's macOS account name inside
+  the app: 677 times in the main program, and once in each of the 31 helper
+  scripts that came with the bundled Python. No password, key, or message
+  content was ever involved, and nothing was sent anywhere. It was a name and a
+  folder layout, in an app whose point is that your messages stay on your
+  machine. Both earlier releases still carry it, because a published download
+  cannot be edited in place. Packaging now checks the finished app for anything
+  of the kind and refuses to release it otherwise.
+]]></description>
+      <enclosure url="https://github.com/gokul-noon/WAArchive-dist/releases/download/v0.1.2-3/WAArchive.dmg" length="109409245" type="application/octet-stream" sparkle:edSignature="55MyKu9rIWhPByPwmB3DXcEkWKR8YABSde8kVcidBMJCustmlPbPeB5oz4Yj2Wa5dNfzHFFk8elcokTLKndFBQ=="/>
+    </item>
+    <item>
       <title>0.1.1</title>
       <pubDate>Fri, 21 Aug 2026 06:25:54 +0000</pubDate>
       <link>https://github.com/gokul-noon/WAArchive-dist/releases/latest</link>
